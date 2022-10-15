@@ -7,6 +7,6 @@ define("CONTROLLERS",APP.DS.'controllers');
 define("CORE",APP.DS.'core');
 define("MODELS",APP.DS.'models');
 define("VIEW",APP.DS.'view');
-require_once(CORE."/app.php");
+require_once("../vendor/autoload.php");
 
-$app=new app();
+$app=new MVC\core\app();
