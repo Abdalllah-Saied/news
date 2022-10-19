@@ -7,6 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'MVC\\controllers\\homecontroller' => $baseDir . '/app/controllers/HomeController.php',
-    'MVC\\core\\app' => $baseDir . '/app/core/App.php',
 );

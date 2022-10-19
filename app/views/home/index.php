@@ -9,6 +9,12 @@
 </head>
 <body>
 <h1> home index</h1>
+<ul>
+
+    <?php    foreach ($users as $user): ?>
+    <li> <?=$user['name']; ?> </li>
+    <?php endforeach; ?>
+</ul>
 
 </body>
 </html>

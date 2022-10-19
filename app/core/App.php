@@ -20,7 +20,6 @@ class App{
             $this->method=isset($url[1]) ? $url[1] : "index";
             unset($url[0],$url[1]);
             $this->params=array_values($url);
-
         }
     }
     private function render(){

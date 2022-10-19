@@ -11,6 +11,10 @@ class ComposerStaticInit1d50231f595700a2642bb7c58254ed44
         array (
             'MVC\\' => 4,
         ),
+        'D' => 
+        array (
+            'Dcblogdev\\PdoWrapper\\' => 21,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -18,12 +22,14 @@ class ComposerStaticInit1d50231f595700a2642bb7c58254ed44
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
+        'Dcblogdev\\PdoWrapper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dcblogdev/pdo-wrapper/src',
+        ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'MVC\\controllers\\homecontroller' => __DIR__ . '/../..',
-        'MVC\\core\\app' => __DIR__ . '/../..',
     );
 
     public static function getInitializer(ClassLoader $loader)
