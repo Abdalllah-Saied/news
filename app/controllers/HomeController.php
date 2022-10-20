@@ -3,10 +3,12 @@
 namespace MVC\controllers;
 
 use MVC\core\controller;
+use MVC\models\User;
 
 class HomeController extends controller {
     public function index(){
-        $users=$this->db()->rows("SELECT * FROM users");
+        $user=new User();
+        $users=$user->gerAllUsers();
         $title='home index';
         $this->view("home/index",['title'=>$title,'users'=>$users]);
     }
