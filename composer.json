@@ -5,6 +5,8 @@
     }
   },
   "require": {
-    "dcblogdev/pdo-wrapper": "^2.0"
+    "dcblogdev/pdo-wrapper": "^2.0",
+    "rakit/validation": "^1.4",
+    "wixel/gump": "^1.11"
   }
 }

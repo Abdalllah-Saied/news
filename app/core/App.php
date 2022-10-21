@@ -21,6 +21,12 @@ class App{
             unset($url[0],$url[1]);
             $this->params=array_values($url);
         }
+        else{
+
+            $this->controller='homeController';
+            $this->method='index';
+            $this->params=array_values([]);
+        }
     }
     private function render(){
         $controller="MVC\controllers\\".$this->controller;

@@ -6,10 +6,22 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit1d50231f595700a2642bb7c58254ed44
 {
+    public static $files = array (
+        'da253f61703e9c22a5a34f228526f05a' => __DIR__ . '/..' . '/wixel/gump/gump.class.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'Rakit\\Validation\\' => 17,
+        ),
         'M' => 
         array (
             'MVC\\' => 4,
+        ),
+        'G' => 
+        array (
+            'GUMP\\' => 5,
         ),
         'D' => 
         array (
@@ -18,9 +30,17 @@ class ComposerStaticInit1d50231f595700a2642bb7c58254ed44
     );
 
     public static $prefixDirsPsr4 = array (
+        'Rakit\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rakit/validation/src',
+        ),
         'MVC\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'GUMP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wixel/gump/src',
         ),
         'Dcblogdev\\PdoWrapper\\' => 
         array (
