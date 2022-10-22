@@ -3,6 +3,7 @@
 namespace MVC\controllers;
 
 use MVC\core\controller;
+use MVC\core\Helpers;
 use MVC\core\Session;
 use MVC\models\User;
 use GUMP;
@@ -25,7 +26,6 @@ class HomeController extends controller {
         echo "add your line ";
     }
     public function login(){
-
         $title='Log In';
         $this->view("home/login",['title'=>$title]);
     }
@@ -39,7 +39,7 @@ class HomeController extends controller {
             $user_data=$user->getUser($_POST['email'],$_POST['password']);
             var_dump($user_data);
             Session::Set('user',$user_data);
-            header('LOCATION:user/index');
+            Helpers::redirect('user/index');
         }
     }
 }
