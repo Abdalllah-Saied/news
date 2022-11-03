@@ -15,6 +15,6 @@ class Session
             return$_SESSION[$key];
     }
     public static function Stop(){
-        session_decode();
+        session_destroy();
     }
 }

@@ -13,5 +13,7 @@ define("USERNAME","root");
 define("PASSWORD","");
 define("DATABASE_NAME","mvc_system");
 define("DATABASE_TYPE","mysql");
-define("DOMAIN_NAME","http://mvc.test/");
+define("DOMAIN_NAME","http://news.test/");
+define('CSS_PATH',DOMAIN_NAME.'/');
+define('PATH',DOMAIN_NAME.'/');
 $app=new MVC\core\App();

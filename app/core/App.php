@@ -29,9 +29,10 @@ class App{
         }
     }
     private function render(){
-        $controller="MVC\controllers\\".$this->controller;
+//        $controller="MVC\controllers\\".$this->controller;
+        $controller = "MVC\controllers\\$this->controller";
         if(class_exists($controller)){
-            $controller=new $controller;
+            $controller=new $controller();
             if (method_exists($controller,$this->method)){
                 call_user_func_array([$controller,$this->method],$this->params);
             }else{
